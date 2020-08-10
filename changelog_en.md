@@ -1,5 +1,8 @@
 # Changelog for KindleEar
 
+## 1.26.7
+  1. Vietnamese version
+
 ## 1.26.6
   1. Add comic pufei, gufeng.
   2. Add more languages for books.

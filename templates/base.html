@@ -99,7 +99,7 @@
         <!-- Header Navigation -->
         <div class="header pure-menu pure-menu-horizontal">
         {% block header -%}
-            <a href="/" class="pure-menu-heading pure-menu-link logo">Báo Kindle</a>
+            <a href="/"><img src="../static/logo.jpg" alt="Báo Kindle"></a>
             {% block header_loginfo -%}
             <ul class="pure-menu-list home-menu">
                 {% if nickname -%}
@@ -161,10 +161,7 @@
         {% block footer -%}
         <p>
             <small>
-            2020 &copy; BaoKindle&nbsp;@{{version}} ｜
-            <a href="/static/faq{%if lang and not lang.startswith('zh')%}_en{%endif%}.html" target="_blank">FAQ</a> ｜Based on
-            <a href="https://github.com/nghienkindle/DocBaoKindle" target="_blank">Github page</a> ｜
-            <a href="https://console.cloud.google.com/appengine" target="_blank">App Engine</a>
+            2020 &copy; BaoKindle&nbsp;@{{version}}
             </small>
         </p>
         {% endblock -%}
