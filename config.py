@@ -4,17 +4,17 @@
 KindleEar配置文件，请务必修改开始两个配置（如果使用uploader，则uploader自动帮你修改）
 """
 
-SRC_EMAIL = "akindleear@gmail.com"  #Your gmail account for sending mail to Kindle
-DOMAIN = "http://kindleear.appspot.com/" #Your domain of app
+SRC_EMAIL = "nghienkindle@gmail.com"  #Your gmail account for sending mail to Kindle
+DOMAIN = "http://baokindle.appspot.com/" #Your domain of app
 
-TIMEZONE = 8  #Default timezone, you can modify it in webpage after deployed
+TIMEZONE = 7  #Default timezone, you can modify it in webpage after deployed
 
 DEFAULT_MASTHEAD = "mh_default.gif" #default masthead
 DEFAULT_COVER = "cv_default.jpg" #default cover, leave it empty will not add cover to book
 DEFAULT_COVER_BV = DEFAULT_COVER #default cover for merged-book, None indicates paste all covers into one, =DEFAULT_COVER enable the using of uploaded image.
 
-MY_FEEDS_TITLE = u'KindleEar'
-MY_FEEDS_DESC = u'RSS from KindleEar'
+MY_FEEDS_TITLE = u'BaoKindle'
+MY_FEEDS_DESC = u'RSS from BaoKindle'
 
 #default timeout for network connection
 CONNECTION_TIMEOUT = 60
@@ -36,7 +36,7 @@ TOC_DESC_WORD_LIMIT = 500
 
 #-------------------add by rexdf-----------
 #title for table of contents
-TABLE_OF_CONTENTS = u'Table Of Contents'
+TABLE_OF_CONTENTS = u'Mục lục'
 
 #description of toc contains image or not
 GENERATE_TOC_THUMBNAIL = True

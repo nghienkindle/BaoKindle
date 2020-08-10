@@ -5,7 +5,7 @@ It will modify AppId and some other items for you automatically.
 Configure file 'custom.txt' format (encoding of the file must be ascii):
 application: YourAppId
 email: YourEmail
-timezone: 8
+timezone: 7
 If it not exist, this script will create it in same directory of __file__.
 """
 import os, sys, re, codecs, locale, shutil
