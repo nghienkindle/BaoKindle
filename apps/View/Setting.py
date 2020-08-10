@@ -14,8 +14,9 @@ from apps.utils import etagged
 from config import *
 
 def langMap(): 
-    return OrderedDict([("zh-cn", _("Chinese")),
+    return OrderedDict([("vi", _("Vietnamese")),
                         ("en-us", _("English")),
+                        ("zh-cn", _("Chinese")),
                         ("fr-fr", _("French")),
                         ("es-es", _("Spanish")),
                         ("pt-br", _("Portuguese")),
@@ -35,7 +36,6 @@ def langMap():
                         ("fa", _("Persian")),
                         ("ur", _("Urdu")),
                         ("sw", _("Swahili")),
-                        ("vi", _("Vietnamese")),
                         ("pa", _("Punjabi")),
                         ("jv", _("Javanese")),
                         ("tl", _("Tagalog")),
@@ -47,7 +47,7 @@ class Setting(BaseHandler):
     def GET(self, tips=None):
         user = self.getcurrentuser()
         if not user.ownfeeds.language:
-            user.ownfeeds.language = "zh-cn"
+            user.ownfeeds.language = "vi"
 
         return self.render('setting.html', "Settings",
             current='setting', user=user, mail_sender=SRC_EMAIL, tips=tips, lang_map=langMap())
